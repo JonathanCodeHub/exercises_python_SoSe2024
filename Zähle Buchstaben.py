@@ -31,11 +31,11 @@ def neue_alphabet_Matrix():
 
 def zähle_buchstaben(text):
     alphabet_matrix=neue_alphabet_Matrix()
-    Zähler = {char: 0 for char in alphabet_matrix.flatten()}
-    for char in text.lower():
-        if char in Zähler:
-            Zähler[char]+=1
-    buchstaben_häufigkeit = {char: count for char, count in Zähler.items() if count > 0}
+    Zähler = {Wdh: 0 for Wdh in alphabet_matrix.flatten()}
+    for Wdh in text.lower():
+        if Wdh in Zähler:
+            Zähler[Wdh]+=1
+    buchstaben_häufigkeit = {Wdh: count for Wdh, count in Zähler.items() if count > 0}
    
     return buchstaben_häufigkeit
 
